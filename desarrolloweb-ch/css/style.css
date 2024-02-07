@@ -65,35 +65,41 @@ h4 {
     font-family:webfont;
 }
 
-.inlineblock {
-    display: inline-block;
-}
+
 
 header {
     border-bottom: 2px solid white;
 }
 
-header div li {
-    display: inline;
-    list-style-type: none;
-    margin:20px;
+#header-logo{
+    width:15%;
+    text-align: left;
 }
+
+#flexheader {
+    display: flex;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#header-menu{
+    width:85%;
+   
+    vertical-align:top;
+}
+
+header div ul {
+    list-style-type: none;
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
 
 header div li a {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     color: white;
-}
-
-#header-logo{
-    width:20%;
-    text-align: center;
-}
-
-#header-menu{
-    width:79%;
-    text-align:right;
-    vertical-align:top;
 }
 
 
@@ -103,14 +109,9 @@ header div li a {
     width:70%;
 }
 
-#index-container {
-}
-
-#body-page p {
-    
-}
-
 .service-container {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
     margin: auto;
     width:60%;
     text-align: center;
@@ -120,18 +121,12 @@ header div li a {
 }
 
 #service1 {
-    display: inline-block;
-    width: 46%;
-    /*height: 100px;*/
     margin:8px;
     background-color: gray;
     border: 5px solid black;
 }
 
 #service2 {
-    display: inline-block;
-    width: 46%;
-    /*height: 100px;*/
     margin:8px;
     background-color: gray;
     border: 5px solid black;
@@ -146,52 +141,20 @@ header div li a {
 }
 
 .partner-container {
-    margin: auto;
-    width:80%;
-    text-align: center;
-    background-color: white;
-    height: auto;
-
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:8px;
 }
 
-#partner1 {
-    display: inline-block;
-    width: 28%;
-    /*height: 100px;*/
-    margin:10px;
-    background-color: #E9E3D5;
-    border: 5px solid black;
-}
+.partnersIndividual{
+    background-color: #fdfeff;
+    border: 5px solid white;
+} 
 
-#partner2 {
-    display: inline-block;
-    width: 28%;
-    /*height: 100px;*/
-    margin:8px;
-    background-color: #3D72FB;
-    border: 5px solid black;
-}
-
-#partner3 {
-    display: inline-block;
-    width: 28%;
-    /*height: 100px;*/
-    margin:8px;
-    background-color: #EFF5F9;
-    border: 5px solid black;
-}
-
-#partner1 img {
+.partnersIndividual img {
     width:100%;
 }
 
-#partner2 img {
-    width:100%;
-}
-
-#partner3 img {
-    width:100%;
-}
 
 #contact-container {
     margin: auto;
@@ -199,12 +162,24 @@ header div li a {
     width: 40%;
 }
 
+#maps-container {
+    width:100%;
+}
 
 footer {
     border-top: 2px solid white;
     margin-top: 20px;
+    
 }
 
+#footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
 footer div li {
     list-style-type: none;
@@ -218,19 +193,18 @@ footer div li a {
 
 footer div {
     vertical-align: middle;
-    
 }
 
 #footer-logo {
     width:19%;
-    display: inline-block;
+    /* display: inline-block; */
     margin:0 auto;
     text-align: center;
 }
 
 #footer-cop {
-    width: 60%;
-    display:inline-block;
+    width: 40%;
+    /* display:inline-block; */
     margin:0 auto;
     text-align: center;
     vertical-align: middle;
@@ -239,6 +213,63 @@ footer div {
 
 #footer-menu {
     width:19%;
-    display:inline-block;
+    /* display:inline-block; */
     margin:0 auto;
 }
+
+
+@media (max-width: 768px) {
+
+
+    #flexheader {
+        flex-wrap:wrap;
+        width: 80%;
+        margin-left: 20%;
+        margin-right: 20%;
+        justify-content: center;
+    }
+    
+    #header-logo{
+        vertical-align: middle;
+        margin-top:25px;
+    }
+
+    #header-menu {
+        width: 50%;
+        vertical-align: top;
+    }
+
+    header div ul {
+        grid-template-columns: 1fr;
+    }
+
+    .partner-container {
+        grid-template-columns: 1fr;
+    }
+
+    .service-container {
+        grid-template-columns: 1fr;
+        width:90%;
+    }
+    
+    #footer-container {
+        display:grid;
+        flex-direction:1fr;
+        flex-wrap: wrap;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    #footer-container ul {
+        margin: 0;
+        padding: 0;
+        width: 90%;
+    }
+
+    #footer-container ul li {
+        text-align: center;
+
+    }
+    
+    }

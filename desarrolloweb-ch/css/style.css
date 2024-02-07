@@ -1,0 +1,244 @@
+/* 
+    selecteor {propiedad : valor}
+*/
+
+@font-face {
+    font-family: "rustica";
+    src: url(../fonts/Rustica.ttf);
+}
+
+@font-face {
+    font-family: "helveticaneue";
+    src: url(../fonts/Helvetica\ Neue\ Regular.otf);
+}
+
+@font-face {
+    font-family: "webfont";
+    src: url(../fonts/000webfont.ttf);
+}
+
+body {
+
+    background-color: black;
+
+}
+
+p {
+    color: black;
+    font-family: helveticaneue,Helvetica,Arial,serif;
+    font-size: 18px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: "Roboto",Helvetica,Arial,serif;
+}
+
+h2 {
+    color: white;
+    font-family: helveticaneue,Helvetica,Arial,serif;
+    font-size: 48px;
+}
+
+
+h3 {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white; 
+}
+
+h4 {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: black; 
+}
+
+.title-page {
+    text-align: center;
+    color: white;
+}
+
+#indexpage-title {
+    font-family:webfont;
+}
+
+.inlineblock {
+    display: inline-block;
+}
+
+header {
+    border-bottom: 2px solid white;
+}
+
+header div li {
+    display: inline;
+    list-style-type: none;
+    margin:20px;
+}
+
+header div li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+#header-logo{
+    width:20%;
+    text-align: center;
+}
+
+#header-menu{
+    width:79%;
+    text-align:right;
+    vertical-align:top;
+}
+
+
+.body-page {
+    margin: auto;
+    text-align: center;
+    width:70%;
+}
+
+#index-container {
+}
+
+#body-page p {
+    
+}
+
+.service-container {
+    margin: auto;
+    width:60%;
+    text-align: center;
+    background-color: white;
+    height: auto;
+
+}
+
+#service1 {
+    display: inline-block;
+    width: 46%;
+    /*height: 100px;*/
+    margin:8px;
+    background-color: gray;
+    border: 5px solid black;
+}
+
+#service2 {
+    display: inline-block;
+    width: 46%;
+    /*height: 100px;*/
+    margin:8px;
+    background-color: gray;
+    border: 5px solid black;
+}
+
+
+#service1-img img {
+    width: 100%;
+}
+#service2-img img {
+    width: 100%;
+}
+
+.partner-container {
+    margin: auto;
+    width:80%;
+    text-align: center;
+    background-color: white;
+    height: auto;
+
+}
+
+#partner1 {
+    display: inline-block;
+    width: 28%;
+    /*height: 100px;*/
+    margin:10px;
+    background-color: #E9E3D5;
+    border: 5px solid black;
+}
+
+#partner2 {
+    display: inline-block;
+    width: 28%;
+    /*height: 100px;*/
+    margin:8px;
+    background-color: #3D72FB;
+    border: 5px solid black;
+}
+
+#partner3 {
+    display: inline-block;
+    width: 28%;
+    /*height: 100px;*/
+    margin:8px;
+    background-color: #EFF5F9;
+    border: 5px solid black;
+}
+
+#partner1 img {
+    width:100%;
+}
+
+#partner2 img {
+    width:100%;
+}
+
+#partner3 img {
+    width:100%;
+}
+
+#contact-container {
+    margin: auto;
+    background-color: white;
+    width: 40%;
+}
+
+
+footer {
+    border-top: 2px solid white;
+    margin-top: 20px;
+}
+
+
+footer div li {
+    list-style-type: none;
+}
+
+footer div li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: white;
+}
+
+footer div {
+    vertical-align: middle;
+    
+}
+
+#footer-logo {
+    width:19%;
+    display: inline-block;
+    margin:0 auto;
+    text-align: center;
+}
+
+#footer-cop {
+    width: 60%;
+    display:inline-block;
+    margin:0 auto;
+    text-align: center;
+    vertical-align: middle;
+    height: auto;
+}
+
+#footer-menu {
+    width:19%;
+    display:inline-block;
+    margin:0 auto;
+}
